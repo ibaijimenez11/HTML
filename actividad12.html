@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Formulario de prueba de HTML5</title>
+</head>
+<body>
+  <h1>Formulario de prueba de HTML5</h1>
+
+  <form method="get" action="">
+    <!-- Nombre: tipo text, obligatorio, autofocus -->
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input id="nombre" name="nombre" type="text" required autofocus>
+    </div>
+
+    <!-- Correo electrónico: tipo email, obligatorio -->
+    <div>
+      <label for="email">Correo electrónico:</label>
+      <input id="email" name="email" type="email" required>
+    </div>
+
+    <!-- URL: tipo url, muestra ayuda -->
+    <div>
+      <label for="url">URL:</label>
+      <input id="url" name="url" type="url" aria-describedby="ayuda-url" placeholder="https://ejemplo.com">
+      <small id="ayuda-url">Escribe la URL de tu página web personal</small>
+    </div>
+
+    <!-- Fecha: tipo date -->
+    <div>
+      <label for="fecha">Fecha:</label>
+      <input id="fecha" name="fecha" type="date">
+    </div>
+
+    <!-- Tiempo: tipo time -->
+    <div>
+      <label for="hora">Tiempo (hora):</label>
+      <input id="hora" name="hora" type="time">
+    </div>
+
+    <!-- Fecha y hora: tipo datetime-local (reemplaza al antiguo datetime) -->
+    <div>
+      <label for="fecha-hora">Fecha y hora:</label>
+      <input id="fecha-hora" name="fecha_hora" type="datetime-local">
+    </div>
+
+    <!-- Mes: tipo month -->
+    <div>
+      <label for="mes">Mes:</label>
+      <input id="mes" name="mes" type="month">
+    </div>
+
+    <!-- Semana: tipo week -->
+    <div>
+      <label for="semana">Semana:</label>
+      <input id="semana" name="semana" type="week">
+    </div>
+
+    <!-- Número: tipo number, entre -10 y 10 -->
+    <div>
+      <label for="numero">Número (entre -10 y 10):</label>
+      <input id="numero" name="numero" type="number" min="-10" max="10" step="1">
+    </div>
+
+    <!-- Teléfono: tipo tel -->
+    <div>
+      <label for="telefono">Teléfono:</label>
+      <input id="telefono" name="telefono" type="tel">
+    </div>
+
+    <!-- Término de búsqueda: tipo search -->
+    <div>
+      <label for="busqueda">Término de búsqueda:</label>
+      <input id="busqueda" name="busqueda" type="search">
+    </div>
+
+    <!-- Color favorito: tipo color -->
+    <div>
+      <label for="color">Color favorito:</label>
+      <input id="color" name="color" type="color" value="#000000">
+    </div>
+
+    <!-- Botón de envío -->
+    <div>
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+</body>
+</html>
